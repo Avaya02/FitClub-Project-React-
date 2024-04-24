@@ -6,6 +6,8 @@ import hero_image_back from '../../assets/hero_image_back.png'
 import Heart from '../../assets/heart.png'
 import Calories from '../../assets/calories.png'
 import {motion} from 'framer-motion'
+import NumberCounter from 'number-counter'
+
 
 const Hero = () => {
   const transition={type: 'spring', duration : 3}
@@ -50,15 +52,23 @@ animation of media queries will be adjusted*/}
     <div><span></span> <span> </span>
     </div>
     <div> 
-    <span>+146</span>
+
+    {/* <span>+146</span> */}
+   <span>
+   <NumberCounter end={140} start={100} delay='4' preFix ="+"/>
+   </span>
      <span>Expert coaches</span>
      </div>
     <div>
-    <span>+978</span>
+    <span>
+    <NumberCounter end={140} start={100} delay='4' preFix ="+"/>
+    </span>
      <span>members joined</span>
      </div>
      <div>
-    <span>+50</span>
+    <span>
+    <NumberCounter end={140} start={100} delay='4' preFix ="+"/>
+    </span>
      <span>fitness programs </span>
      </div>
 
